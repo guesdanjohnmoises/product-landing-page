@@ -1,3 +1,12 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* HEADER + NAV */
 #header {
     position: fixed;
     top: 0;
@@ -22,4 +31,107 @@
     display: flex;
     gap: 25px;
     align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #00bfff;
+}
+
+/* HERO */
+#hero {
+    padding-top: 140px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+/* FEATURES */
+#features {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+}
+
+/* VIDEO SECTION */
+#video-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#video {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 12px;
+    background: #000;
+}
+
+/* PRICING */
+#pricing {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.price-box {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* NEWSLETTER */
+#newsletter {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#email {
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+}
+
+#submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #00bfff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#submit:hover {
+    opacity: 0.9;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+    #nav-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #video {
+        width: 95%;
+        height: auto;
+    }
 }
