@@ -1,10 +1,12 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
     line-height: 1.6;
 }
+
 
 #header {
     position: fixed;
@@ -12,9 +14,11 @@ body {
     width: 100%;
     background: #111;
     padding: 10px 20px;
-    display: flex;                 /* FLEXBOX USED */
+
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
+    
     z-index: 1000;
 }
 
@@ -22,9 +26,12 @@ body {
     width: 60px;
 }
 
+
 #nav-bar {
     display: flex;
-    gap: 20px;
+    align-items: center;   
+    justify-content: flex-end;
+    gap: 25px;
 }
 
 .nav-link {
@@ -37,10 +44,11 @@ body {
     color: #00bfff;
 }
 
+
 #hero {
-    padding-top: 120px; 
+    padding-top: 140px;
+    padding-bottom: 80px;
     text-align: center;
-    padding-bottom: 50px;
 }
 
 #features {
@@ -49,7 +57,7 @@ body {
 }
 
 .features-container {
-    display: flex;    
+    display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
@@ -66,6 +74,14 @@ body {
 #video-section {
     text-align: center;
     padding: 40px 20px;
+}
+
+#video {
+    width: 80%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 12px;
+    background: #000;
 }
 
 
@@ -96,7 +112,6 @@ body {
 
 #submit {
     padding: 10px 20px;
-    margin-left: 10px;
     border: none;
     border-radius: 5px;
     background: #00bfff;
@@ -116,7 +131,7 @@ body {
     }
 
     #video {
-        width: 90%;
+        width: 95%;
         height: auto;
     }
 }
